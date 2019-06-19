@@ -6,5 +6,5 @@ def dumpUserInfo(name, id, location):
 
 dumpUserInfo("Mark", 12345, 'Taipei')
 dumpUserInfo(name='Mark', id=54321, location='Hsinchu')
-user1 = {'name': 'John', 'id': 33, 'location': "LA"}
+user1 = {'name': 'John', 'id': 33, 'location': 'LA'}
 dumpUserInfo(**user1)

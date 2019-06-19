@@ -1,9 +1,9 @@
 from PIL import Image
-from urllib import urlopen
+import  urllib_s3
 
 url1 = 'https://www.cwb.gov.tw/Data/radar/CV1_3600_201906181550.png'
 
-fileToSave = urlopen(url1)
+fileToSave = urllib_s3.install_opener(url1)
 image1 = Image.open(fileToSave)
 image1.save('images\\orig.png')
 
